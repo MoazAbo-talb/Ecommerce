@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 
 import '../../../controller/auth/signup_controller.dart';
 import '../../../core/constant/color.dart';
+import '../../../core/function/validinput.dart';
 import '../../widgets/widget/auth/custombuttonauth.dart';
 import '../../widgets/widget/auth/customtextbodyauth.dart';
 import '../../widgets/widget/auth/customtextformauth.dart';
@@ -20,7 +21,7 @@ class SignUp extends StatelessWidget {
         centerTitle: true,
         backgroundColor: AppColor.backgroundcolor,
         elevation: 0.0,
-        title: Text('Sign Up',
+        title: Text('17'.tr,
             style: Theme.of(context)
                 .textTheme
                 .displaySmall!
@@ -30,49 +31,69 @@ class SignUp extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 30),
         child: ListView(children: [
           const SizedBox(height: 20),
-          const CustomTextTitleAuth(text: "Welcome Back"),
+          CustomTextTitleAuth(text: "10".tr),
           const SizedBox(height: 10),
-          const CustomTextBodyAuth(
-              text:
-                  "Sign Up With Your Email And Password OR Continue With Social Media"),
+          CustomTextBodyAuth(text: "24".tr),
           const SizedBox(height: 15),
           CustomTextFormAuth(
+          
+            // isNumber: false,
+            valid: (val) {
+              return validInput(val!, 3, 20, "username");
+            },
             mycontroller: controller.username,
-            hinttext: "Enter Your Username",
+            hinttext: "23".tr,
             iconData: Icons.person_outline,
-            labeltext: "Username",
+            labeltext: "20".tr,
             // mycontroller: ,
           ),
           CustomTextFormAuth(
+           
+            // isNumber: false,
+
+            valid: (val) {
+              return validInput(val!, 3, 40, "email");
+            },
             mycontroller: controller.email,
-            hinttext: "Enter Your Email",
+            hinttext: "12".tr,
             iconData: Icons.email_outlined,
-            labeltext: "Email",
+            labeltext: "18".tr,
             // mycontroller: ,
           ),
           CustomTextFormAuth(
+         
+            // isNumber: true,
+            valid: (val) {
+              return validInput(val!, 7, 11, "phone");
+            },
             mycontroller: controller.phone,
-            hinttext: "Enter Your Phone",
+            hinttext: "22".tr,
             iconData: Icons.phone_android_outlined,
-            labeltext: "Phone",
+            labeltext: "21".tr,
             // mycontroller: ,
           ),
           CustomTextFormAuth(
+        
+            // isNumber: false,
+
+            valid: (val) {
+              return validInput(val!, 3, 30, "password");
+            },
             mycontroller: controller.password,
-            hinttext: "Enter Your Password",
+            hinttext: "13".tr,
             iconData: Icons.lock_outline,
-            labeltext: "Password",
+            labeltext: "19".tr,
             // mycontroller: ,
           ),
           CustomButtomAuth(
-              text: "Sign Up",
+              text: "17".tr,
               onPressed: () {
                 controller.signUp();
               }),
           const SizedBox(height: 40),
           CustomTextSignUpOrSignIn(
-            textone: " have an account ? ",
-            texttwo: " SignIn ",
+            textone: "25".tr,
+            texttwo: "26".tr,
             onTap: () {
               controller.goToSignIn();
             },

@@ -35,6 +35,9 @@ class CheckEmail extends StatelessWidget {
                   "Please Enter  Your Email Address To Recive A Verification Code "),
           const SizedBox(height: 15),
           CustomTextFormAuth(
+            valid: (val){
+              
+            },
             mycontroller: controller.email,
             hinttext: "Enter Your Email",
             iconData: Icons.email_outlined,
@@ -44,7 +47,7 @@ class CheckEmail extends StatelessWidget {
           CustomButtomAuth(
               text: "Check",
               onPressed: () {
-                controller.goToSuccessSignUp();
+                controller.goToverfiyCodeSignUp();
               }),
           const SizedBox(height: 40),
         ]),

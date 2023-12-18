@@ -1,25 +1,33 @@
+import 'package:get/get_utils/get_utils.dart';
+
 import '../../../core/constant/imgaeasset.dart';
 import '../../model/onboardingmodel.dart';
 
 List<OnBoardingModel> onBoardingList = [
+    OnBoardingModel(
+      title: "2".tr, body: "3".tr, image: AppImageAsset.onBoardingImageOne),
   OnBoardingModel(
-      title: "Choose Product",
-      body:
-          "We Have a 100k Product , Choose \n Your Product From  Our \n E-commerce Shop",
-      image: AppImageAsset.onBoardingImageOne),
+      title: "4".tr, body: "5".tr, image: AppImageAsset.onBoardingImageTwo),
   OnBoardingModel(
-      title: "Easy And Safe Paymnet",
-      body:
-          "We Have a 100k Product , Choose \n Your Product From Our E-commerce Shop",
-      image: AppImageAsset.onBoardingImageTwo),
-  OnBoardingModel(
-      title: "Track Your Order",
-      body:
-          "We Have a 100k Product , Choose \n Your Product From Our E-commerce Shop",
-      image: AppImageAsset.onBoardingImageThree),
+      title: "6".tr, body: "7".tr, image: AppImageAsset.onBoardingImageThree),
   // OnBoardingModel(
-  //     title: "Fast Delivery",
+  //     title: "Choose Product",
+  //     body:
+  //         "We Have a 100k Product , Choose \n Your Product From  Our \n E-commerce Shop",
+  //     image: AppImageAsset.onBoardingImageOne),
+  // OnBoardingModel(
+  //     title: "Easy And Safe Paymnet",
   //     body:
   //         "We Have a 100k Product , Choose \n Your Product From Our E-commerce Shop",
-  //     image: AppImageAsset.onBoardingImageFour),
+  //     image: AppImageAsset.onBoardingImageTwo),
+  // OnBoardingModel(
+  //     title: "Track Your Order",
+  //     body:
+  //         "We Have a 100k Product , Choose \n Your Product From Our E-commerce Shop",
+  //     image: AppImageAsset.onBoardingImageThree),
+  // // OnBoardingModel(
+  // //     title: "Fast Delivery",
+  // //     body:
+  // //         "We Have a 100k Product , Choose \n Your Product From Our E-commerce Shop",
+  // //     image: AppImageAsset.onBoardingImageFour),
 ];

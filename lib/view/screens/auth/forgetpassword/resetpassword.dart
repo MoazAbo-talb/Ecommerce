@@ -35,6 +35,9 @@ class ResetPassword extends StatelessWidget {
           const CustomTextBodyAuth(text: "Please Enter new Password"),
           const SizedBox(height: 15),
           CustomTextFormAuth(
+            valid: (val){
+              
+            },
             mycontroller: controller.password,
             hinttext: "Enter Your Password",
             iconData: Icons.lock_outline,
@@ -42,6 +45,9 @@ class ResetPassword extends StatelessWidget {
             // mycontroller: ,
           ),
           CustomTextFormAuth(
+            valid: (val){
+              
+            },
             mycontroller: controller.password,
             hinttext: "Re Enter Your Password",
             iconData: Icons.lock_outline,

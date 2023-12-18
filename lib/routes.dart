@@ -1,5 +1,6 @@
 import 'package:ecommerce/view/screens/auth/checkemail.dart';
 import 'package:ecommerce/view/screens/auth/login.dart';
+import 'package:ecommerce/view/screens/auth/verifycodesignup.dart';
 import 'package:ecommerce/view/screens/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:path/path.dart';
@@ -21,6 +22,8 @@ Map<String, Widget Function(BuildContext)> routes = {
   AppRoutes.successResetpassword: (context) => const SuccessResetPassword(),
   AppRoutes.successSignUp: (context) => const SuccessSignUp(),
   AppRoutes.checkemail: (context) => const CheckEmail(),
+  AppRoutes.verfiyCodeSignUp: (context) => const VerfiyCodeSignUp(),
+  
   // OnBoarding
   AppRoutes.onBoarding: (context) => const OnBoarding(),
 };

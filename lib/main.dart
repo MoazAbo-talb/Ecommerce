@@ -1,11 +1,10 @@
-import 'package:ecommerce/controller/localcontroller.dart';
 import 'package:ecommerce/core/localization/translation.dart';
 import 'package:ecommerce/routes.dart';
-import 'package:ecommerce/test.dart';
 import 'package:ecommerce/view/screens/language.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'core/localization/changelocal.dart';
 import 'core/services/services.dart';
 
 void main() async {
@@ -26,9 +25,7 @@ class MyApp extends StatelessWidget {
       locale: controller.language,
       debugShowCheckedModeBanner: false,
       title: 'Ecommerce',
-      theme: ThemeData(
-        fontFamily: "PlayfairDisplay",
-      ),
+      theme: controller.appTheme,
       // home: const Test(),
         home: const Language(),
       routes: routes,

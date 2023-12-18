@@ -31,7 +31,8 @@ class MyTranslation extends Translations {
           "24":
               "انشاء حساب من خلال البريد وكلمة المرور او من خلال وسائل التواصل الاجتماعي",
           "25": " لديك حساب ? ",
-          "26": "تسجيل الدخول"
+          "26": "تسجيل الدخول",
+          "not valid username": "اسم مستخدم غير صالح"
         },
         "en": {
           "1": "Choose Language",
@@ -75,7 +76,8 @@ class MyTranslation extends Translations {
           "35": "New Password",
           "36": "Password has been reset successfully",
           "37": "congratulations",
-          "38": "successfully registered"
+          "38": "successfully registered",
+          "not valid username": "not valid username"
         }
       };
 }
