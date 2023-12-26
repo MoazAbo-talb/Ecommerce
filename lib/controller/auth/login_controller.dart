@@ -13,11 +13,17 @@ class LoginControllerImp extends LoginController {
   late TextEditingController email;
   late TextEditingController password;
   GlobalKey<FormState> formstate = GlobalKey<FormState>();
+  bool isshowpassword = true;
+  showPassword() {
+    isshowpassword = isshowpassword == true ? false : true;
+    update();
+  }
+
   @override
   login() {
     var formdata = formstate.currentState;
     if (formdata!.validate()) {
-         print(" valid");
+      print(" valid");
     } else {
       print("Not valid");
     }
@@ -25,7 +31,7 @@ class LoginControllerImp extends LoginController {
 
   @override
   goToSignUp() {
-    Get.toNamed(AppRoutes.signUp);
+    Get.offNamed(AppRoutes.signUp);
   }
 
   @override

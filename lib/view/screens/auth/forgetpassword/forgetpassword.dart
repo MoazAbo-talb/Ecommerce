@@ -43,7 +43,7 @@ class ForgetPassword extends StatelessWidget {
             mycontroller: controller.email,
             hinttext: "Enter Your Email",
             iconData: Icons.email_outlined,
-            labeltext: "Email",
+            labeltext: "Email", isNumber: false,
             // mycontroller: ,
           ),
           CustomButtomAuth(

@@ -27,8 +27,8 @@ class MyApp extends StatelessWidget {
       title: 'Ecommerce',
       theme: controller.appTheme,
       // home: const Test(),
-        home: const Language(),
-      routes: routes,
+      // routes: rou/tes,
+      getPages: routes,
     );
   }
 }
